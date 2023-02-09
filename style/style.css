@@ -41,7 +41,8 @@ header{
 
 main{
     height: calc(100% - 120px);
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     background-color: var(--bg-body);
     overflow-y: auto;
     position: relative;
