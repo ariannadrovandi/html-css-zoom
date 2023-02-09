@@ -54,7 +54,7 @@ footer{
 }
 
 /*HEADER*/
-/*.hd-btn a{
+.hd-btn a{
     background-color: var(--bg-button);
     color: var(--text-icon);
     padding: 5px;
@@ -65,7 +65,7 @@ footer{
 
 #sp{
     margin-right: 6px;
-}*/
+}
 
 
 
