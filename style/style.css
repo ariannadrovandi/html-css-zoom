@@ -44,6 +44,7 @@ main{
     width: 80%;
     margin: 0 auto;
     background-color: var(--bg-body);
+    color: var(--text-icon);
     overflow-y: auto;
     position: relative;
 }
@@ -71,7 +72,7 @@ footer{
 /*MAIN*/
 .person{
     width: calc (100% / 7);
-    height: calc (100vw / 7);
+    height: calc (100vh / 7);
     padding: 8px 4px;
 }
 
@@ -79,7 +80,7 @@ footer{
     
 }
 
-.name{
+.{
     color: var(--text-icon);
 }
 
