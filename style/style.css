@@ -68,8 +68,20 @@ footer{
     margin-right: 6px;
 }
 
+/*MAIN*/
+.person{
+    width: calc (100% / 7);
+    height: calc (100vw / 7);
+    padding: 8px 4px;
+}
 
+.image{
+    
+}
 
+.name{
+    color: var(--text-icon);
+}
 
 
 
