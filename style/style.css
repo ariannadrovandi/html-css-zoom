@@ -12,7 +12,7 @@
     --tag-name: #626F7C;
     --share:#4BC800;
     --text-icon:#FFFFFE;
-    
+    --end-call: #ff0000;
 }
 
 /*.debug{
@@ -40,21 +40,24 @@ header{
 }
 
 main{
-    height: calc(100% - 120px);
-    width: 80%;
+    width: calc(100% - 185px);
+    height: calc(100vh - 120px);
     margin: 0 auto;
     background-color: var(--bg-body);
     color: var(--text-icon);
-    overflow-y: auto;
+    overflow-y: hidden;
     position: relative;
 }
 
 footer{
-    background-color: var(--bg-footer);
-    height: 70px;
     width: 100%;
+    height: 50px;
+    margin-top: 4px;
+    padding: 4px 4px;
+    background-color: var(--bg-footer);
+    color: var(--text-icon);
+    font-size: 13px;
 }
-
 /*HEADER*/
 .hd-btn a{
     background-color: var(--bg-button);
@@ -70,12 +73,6 @@ footer{
 }
 
 /*MAIN*/
-main{
-    width: calc(100% - 180px);
-    height: calc(100vh - 120px);
-    margin: 0 auto;
-    overflow: hidden;
-}
 .people{
     flex-flow: row wrap;
     width: 100%;
@@ -96,10 +93,63 @@ img{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--tag-name);
 }
 
-
-{
-
+/* FOOTER */
+.f-container{
+justify-content: space-between;
 }
+
+.left{
+    width: 20%; 
+}
+
+.central{
+    width: 60%;
+    justify-content: space-between;
+}
+
+.icon{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.text{
+    text-align: center;
+}
+
+.angle{
+    line-height: 50px;
+}
+
+.icon.special, .text.special{
+    color: var(--share);
+}
+
+.end{
+    background-color: var(--bg-button);
+    color: var(--end-call);
+    width: 110px;
+    position: absolute;
+    right: 0;
+    line-height: 40px;
+    text-align: center;
+}
+.right{
+    width: 20%;
+    position: relative;
+}
+
+.call, .angle{
+    display: inline-block;
+}
+
+.left *{
+    padding-left: 6px;
+}
+
+.button:hover{
+    background-color: var(--bg-button);
+}
+
